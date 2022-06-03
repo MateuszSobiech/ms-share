@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+body textarea {
+    resize: none;
+    background: transparent !important;
+    color: whitesmoke !important;
+    font-size: 30px !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    width: 75%;
+}
+
+.svg-man {
+    height: 300px;
+    top: 50%;
+    right: 10%;
+}
+
+.toast {
+    margin: 0 3rem 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .svg-man {
+        height: 200px;
+        bottom: 1%;
+        right: 7%;
+        top: unset;
+    }
+
+    body textarea {
+        width: 100%;
+        font-size: 20px !important;
+    }
+
+    .toast {
+        height: max-content;
+        width: 80% !important;
+        margin: 3rem 10% 0 10%;
+        bottom: unset;
+        top: 0;
+    }
+}

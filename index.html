@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MS Share</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script defer type="module" src="main.js"></script>
-  </head>
-  <body>
-    <h1>MS Share</h1>
-    <textarea cols="30" rows="10"></textarea>
-  </body>
+<html class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>MS Share</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script defer type="module" src="./js/main.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body class="h-100">
+        <img class="position-absolute svg-man" src="./img/undraw_source_code_re_wd9m.svg" alt="man walking with code behind him, svg" />
+        <main class="h-100 container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-center w-75 mb-3 text-light">MS Share</h1>
+
+            <textarea class="form-control h-50 text-center p-5" id="share" rows="3" placeholder="Share data"></textarea>
+        </main>
+
+        <div class="toast bottom-0 end-0 text-bg-success position-absolute" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">The data has been saved.</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
