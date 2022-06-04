@@ -2,6 +2,10 @@ body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
+main {
+    justify-content: center;
+}
+
 body textarea {
     resize: none;
     background: transparent !important;
@@ -23,6 +27,11 @@ body textarea {
 }
 
 @media (max-width: 768px) {
+    main {
+        margin-top: 30px;
+        justify-content: start;
+    }
+
     .svg-man {
         height: 200px;
         bottom: 1%;
